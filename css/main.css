@@ -4,7 +4,7 @@
 }
 
 body {
-    /* font-family: ; */
+    font-family: Roboto, sans-serif;
 }
 
 .hidden {
@@ -29,6 +29,7 @@ header {
 }
 
 h1{
+    font-size: 1.8rem;
     font-weight: bold;
 }
 
@@ -44,6 +45,10 @@ nav a{
 
 nav a:hover{
     color: #111827;
+}
+
+.menu-icon{
+    display: none;
 }
 
 /* hero section */
@@ -69,17 +74,20 @@ nav a:hover{
     width: 1280px;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     gap: 40px;
     margin-inline: auto;
 }
 
 #feature-image-container img {
-    width: 608px;
+    width: 100%;
     height: 400px;
     border-radius: 10px;
 }
 
 #feature-details{
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -92,7 +100,7 @@ nav a:hover{
 }
 
 #feature-details h2{
-    font-size: 30px;
+    font-size: 1.8rem;
     font-weight: bold;
 }
 
@@ -193,3 +201,73 @@ footer {
 }
 
 
+@media only screen and (max-width: 600px) {
+
+    #header-container {
+        width: 100%;
+        padding: 4px 0px;
+    }
+
+    h1{
+        margin-left: 8px;
+    }
+
+    nav {
+        display: none;
+    }
+    
+    .menu-icon{
+        display: flex;
+        margin-right: 10px;
+    }
+
+    /* feature section */
+    /* #feature-section {
+        border: 1px solid red;
+    } */
+
+    #feature-container{
+        width: 95%;
+        flex-direction: column;
+        padding: 0px 10px;
+    }
+
+    #feature-image-container img {
+        width: 100%;
+        height: 300px;
+        border-radius: 10px;
+    }
+
+    #feature-details{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        padding: 0px 10px;
+    }
+
+    /* blog section */
+    #bloglist-container {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 48px 0px;
+    }
+
+    #bloglist-cards {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* footer section */
+    footer{
+        width: 100%;
+    }
+
+    #footer-container{
+        width: 100%;
+    }
+}
