@@ -7,10 +7,6 @@ body {
     font-family: Roboto, sans-serif;
 }
 
-.hidden {
-    display: none;
-}
-
 /* header section */
 header {
     width: 100%;
@@ -47,8 +43,35 @@ nav a:hover{
     color: #111827;
 }
 
-.menu-icon{
+.ham-burger{
     display: none;
+}
+
+.mobile-nav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    position: absolute;
+    overflow: none;
+    top: 90px;
+    padding: 20px 0px;
+    left: 0;
+    right: 0;
+}
+
+.mobile-nav a {
+    padding-left: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.active{
+    color: #FFFFFF;
+    background-color: #4B5563;
+    padding: 20px 10px;
 }
 
 /* hero section */
@@ -212,14 +235,34 @@ footer {
         margin-left: 8px;
     }
 
-    nav {
+    nav{
         display: none;
     }
-    
-    .menu-icon{
+
+    .ham-burger{
         display: flex;
+    }
+    
+    #menu-icon{
+        width: 30px;
         margin-right: 10px;
     }
+
+    #menu-close{
+        width: 30px;
+        margin-right: 10px;
+    }
+
+    /* .mobile-nav{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff;
+        position: absolute;
+        overflow: none;
+        top: 90px;
+        padding: 20px 10px;
+    } */
 
     /* feature section */
     /* #feature-section {
