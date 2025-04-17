@@ -1,0 +1,38 @@
+#hero-section{
+    width: 100%;
+    height: 600px;
+    background-image: url('/assets/images/contact-header-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    opacity: 0.7;
+}
+
+#contact-hero-container{
+    width: 1280px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-inline: auto;
+    gap: 30px;
+}
+
+#contact-hero-container h2{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+#contact-hero-container p {
+    width: 50%;
+    text-align: center;
+}
+
+#contact-btn{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: red;
+    border-radius: 8px;
+}
