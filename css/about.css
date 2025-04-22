@@ -1,3 +1,7 @@
+/*----------------------------
+Hero Section
+-----------------------------*/
+
 #about-hero-section {
     width: 100%;
     height: 400px;
@@ -39,6 +43,10 @@
     text-align: center;
 }
 
+/*----------------------------
+About Section
+-----------------------------*/
+
 #about-feature-section{
     width: 100%;
     background-color: #F9FAFB;
@@ -76,13 +84,17 @@
     line-height: 22px;
 }
 
+/*----------------------------
+What We Do Section
+-----------------------------*/
+
 #what-we-do-feature-section {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-inline-start: auto;
-    padding: 48px 0px;
+    padding: 48px 0;
 }
 
 #what-we-do-feature{
@@ -92,7 +104,7 @@
     flex-direction: row;
     justify-content: center;
     gap: 26px;
-    padding: 48px 0px;
+    padding: 48px 0;
 }
 
 #what-we-do-details{
@@ -110,6 +122,11 @@ ul{
     gap: 20px;
 }
 
+
+/*----------------------------
+Why Section
+-----------------------------*/
+
 #why-feature-details{
     width: 100%;
     height: 300px;
@@ -118,7 +135,7 @@ ul{
     align-items: center;
     justify-content: center;
     background-color: #E4E4E4;
-    padding: 48px 0px;
+    padding: 48px 0;
     gap: 26px;
 }
 
@@ -127,6 +144,9 @@ ul{
     width: 80%;
 }
 
+/*----------------------------
+Dev Section
+-----------------------------*/
 #dev-feature-section{
     width: 100%;
     display: flex;
@@ -142,7 +162,7 @@ ul{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 48px 0px;
+    padding: 48px 0;
     gap: 26px;
 }
 
