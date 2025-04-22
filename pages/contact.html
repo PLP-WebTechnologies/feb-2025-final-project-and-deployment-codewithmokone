@@ -23,14 +23,14 @@
                 <a href="contact.html">Contact</a>
             </nav>
             <div class="ham-burger">
-                <img id="menu-icon" src="assets/icons/menu-svgrepo-com.svg" alt="menu-hamburger-icon">
-                <img id="menu-close" class="hidden" src="assets/icons/close-svgrepo-com.svg" alt="menu-close-icon">
+                <img id="menu-icon" src="../assets/icons/menu-svgrepo-com.svg" alt="menu-hamburger-icon">
+                <img id="menu-close" class="hidden" src="../assets/icons/close-svgrepo-com.svg" alt="menu-close-icon">
             </div>
             <nav class="mobile-nav hidden">
-                <a class="mobile-link" href="./index.html">Home</a>
-                <a class="mobile-link" href="./pages/about.html">Articles</a>
-                <a class="mobile-link" href="./pages/about.html">About</a>
-                <a class="mobile-link" href="./pages/contact.html">Contact</a>
+                <a class="mobile-link" href="/index.html">Home</a>
+                <a class="mobile-link" href="articles.html">Articles</a>
+                <a class="mobile-link" href="about.html">About</a>
+                <a class="mobile-link" href="contact.html">Contact</a>
             </nav>
         </div>
     </header>
@@ -82,10 +82,11 @@
                     <h3>Send Message</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis reiciendis.</p>
                    <form id="form" action="">
-                        <input type="text" id="fname" name="fname" placeholder="Full name" required><br>
-                        <input type="email" id="fname" name="fname" placeholder="Email" required><br>
-                        <textarea name="message" rows="10" cols="30" placeholder="Message" required>
-                        </textarea><br>
+                        <input type="text" id="fname" name="fname" placeholder="Full name" required>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                        <textarea id="message" name="message" rows="10" cols="30" required>
+                        Message...
+                        </textarea>
                         <button>Send Message</button>
                    </form>
                 </div>
@@ -97,6 +98,6 @@
 
         </div>
     </footer>
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>
