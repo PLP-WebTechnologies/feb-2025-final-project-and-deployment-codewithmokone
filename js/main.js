@@ -3,8 +3,6 @@ const menuClose = document.querySelector('#menu-close');
 const mobileNav = document.querySelector('.mobile-nav');
 const mobileLinks = document.querySelectorAll('.mobile-link');
 
-console.log(mobileNav)
-
 // Loop through each navigation link in the mobile menu
 mobileLinks.forEach((link) => {
     link.addEventListener("click", function () {

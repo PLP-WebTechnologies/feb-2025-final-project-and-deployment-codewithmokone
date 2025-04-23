@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <!-- external links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
     <!-- internal links -->
     <link rel="stylesheet" href="css/main.css">
     <title>Home - Blog Website</title>
@@ -14,23 +16,29 @@
 <body>
     <header>
         <div id="header-container">
+
             <h1>Dev-Blog</h1>
+
             <nav>
                 <a href="./index.html">Home</a>
                 <a href="./pages/articles.html">Articles</a>
                 <a href="./pages/about.html">About</a>
                 <a href="./pages/contact.html">Contact</a>
+                <a href="./pages/createPost.html">Creat Post</a>
             </nav>
+
             <div class="ham-burger">
                 <img id="menu-icon" src="assets/icons/menu-svgrepo-com.svg" alt="menu-hamburger-icon">
                 <img id="menu-close" class="hidden" src="assets/icons/close-svgrepo-com.svg" alt="menu-close-icon">
             </div>
+
             <nav class="mobile-nav hidden">
                 <a class="mobile-link" href="./index.html">Home</a>
                 <a class="mobile-link" href="./pages/about.html">Articles</a>
                 <a class="mobile-link" href="./pages/about.html">About</a>
                 <a class="mobile-link" href="./pages/contact.html">Contact</a>
             </nav>
+
         </div>
     </header>
     <main>
@@ -40,6 +48,7 @@
             </div>
         </section> -->
         <!-- feature section -->
+
         <section id="feature-section">
             <div id="feature-container">
                 <div id="feature-image-container">
@@ -56,56 +65,22 @@
                 </div>
             </div>
         </section>
+
         <!-- block articles section -->
         <section id="bloglist-section">
-            <div id="bloglist-container">
+
+            <div id="bloglist-container" >
                 <div id="bloglist-heading">
                     <h2>Latest Articles</h2>
                 </div>
-                <div id="bloglist-cards">
-                    <!-- article one -->
-                    <article>
-                        <img src="assets/images/article-1.jpg" alt="article-image" />
-                        <div>
-                          <span class="date">March 15, 2025</span>
-                          <h3>Getting Started with React Hooks</h3>
-                          <p>Lorem ipsum dolor sit amet consectetur 
-                            adipisicing elit. Optio cupiditate consequatur corporis.</p>
-                          <a href="#" class="hover:text-indigo-700">
-                            Read More →
-                          </a>
-                        </div>
-                    </article>
-                    <!-- article two -->
-                    <article>
-                        <img src="assets/images/article-2.jpg" alt="article-image" />
-                        <div>
-                          <span class="date">Jan 5, 2025</span>
-                          <h3>Web Development</h3>
-                          <p>Lorem ipsum dolor sit amet consectetur 
-                            adipisicing elit. Optio cupiditate consequatur corporis.</p>
-                          <a href="#" class="hover:text-indigo-700">
-                            Read More →
-                          </a>
-                        </div>
-                    </article>
-                    <!-- article three -->
-                    <article>
-                        <img src="assets/images/article-3.jpg" alt="article-image" />
-                        <div>
-                          <span class="date">April 10, 2024</span>
-                          <h3>Master CSS</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur 
-                                adipisicing elit. Optio cupiditate consequatur corporis.</p>
-                          <a href="#" class="hover:text-indigo-700">
-                            Read More →
-                          </a>
-                        </div>
-                    </article>
+                <div id="post-container">
+                   
                 </div>
             </div>
+
         </section>
     </main>
+
     <!-- footer section -->
     <footer>
         <div id="footer-container">
@@ -113,5 +88,7 @@
         </div>
     </footer>
     <script src="js/main.js"></script>
+    <!-- <script src="js/post.js"></script> -->
+    <script src="js/content.js" defer></script>
 </body>
 </html>

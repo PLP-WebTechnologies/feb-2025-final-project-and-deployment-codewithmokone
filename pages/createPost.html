@@ -11,77 +11,61 @@
     
     <!-- internal links -->
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/createpost.css">
     <title>Blog Website</title>
 </head>
 <body>
-
     <header>
         <div id="header-container">
-
             <h1>Dev-Blog</h1>
-
             <nav>
                 <a href="/index.html">Home</a>
                 <a href="articles.html">Articles</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
             </nav>
-
             <div class="ham-burger">
                 <img id="menu-icon" src="../assets/icons/menu-svgrepo-com.svg" alt="menu-hamburger-icon">
                 <img id="menu-close" class="hidden" src="../assets/icons/close-svgrepo-com.svg" alt="menu-close-icon">
             </div>
-
             <nav class="mobile-nav hidden">
                 <a class="mobile-link" href="./index.html">Home</a>
                 <a class="mobile-link" href="./pages/about.html">Articles</a>
                 <a class="mobile-link" href="./pages/about.html">About</a>
                 <a class="mobile-link" href="./pages/contact.html">Contact</a>
             </nav>
-
         </div>
     </header>
-
     <main>
-        <!-- <section id="feature-section">
-            <div id="feature-container">
-                <div id="feature-image-container">
-                    <img src="../assets/images/main-feature-img.jpg" alt="featured-post-image">
-                </div>
-                <div id="feature-details">
-                    <span>Featured Post</span>
-                    <h2>The Art of Mindful Programming</h2>
-                    <p>Discover how mindfulness can improve your coding practices and help you 
-                        become a better developer. Learn practical techniques to enhance focus
-                        and productivity.
-                    </p>
-                    <a href="">Read More </a>
-                </div>
-            </div>
-        </section> -->
-
-        <section id="bloglist-section" class="article-page">
-
-            <div id="bloglist-container">
-                <div id="bloglist-heading">
-                    <h2>Latest Articles</h2>
-                </div>
-                <div id="post-container">
-                 
-                </div>
-            </div>
+        <section id="post-container">
 
         </section>
+        
+        <section class="post-container">
+            <div id="createPostModal" class="modal">
+                <div class="modal-content">
+                    <h2>Create A New Post</h2>
+                    <form id="postForm">
+                        <label for="postTitle">Title:</label>
+                        <input type="text" class="postInput" id="title" name="title" required>
+                        <label for="postTitle">Date:</label>
+                        <input type="date" class="postInput" id="date" name="date" required>
+                        <label class="postheading" for="description">Description</label>
+                        <textarea class="postInput postDescription" id="description" name="description" required>
+                        </textarea>
+                        <button type="submit" id="submit" class="postSubmitBtn">Post</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
-
     <footer>
-
         <div id="footer-container">
 
         </div>
-
     </footer>
-    <script src="../js/main.js"></script>
-    <script src="../js/content.js"></script>
+    <script src="../js/main.js" defer></script>
+    <script src="../js/content.js" defer></script>
+    <!-- <script src="../js/post.js"></script> -->
 </body>
 </html>

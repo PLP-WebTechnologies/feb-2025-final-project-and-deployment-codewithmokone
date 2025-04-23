@@ -1,24 +1,11 @@
-/* header section */
+/*----------------------------
+Header Section
+-----------------------------*/
 header {
     width: 100%;
     background-color: #FFFFFF;
     border-bottom: 1px solid #e5e7eb;
 } 
-
-/* #header-container {
-    width: 1280px;
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-inline: auto;
-    padding: 4px 6px;
-}
-
-h1{
-    font-size: 1.8rem;
-    font-weight: bold;
-} */
 
 nav{
     display: flex;
@@ -65,7 +52,9 @@ nav a:hover{
     padding: 20px 10px;
 }
 
-/* hero section */
+/*----------------------------
+Hero Section
+-----------------------------*/
 #hero-section{
     width: 100%;
     height: 600px;
@@ -105,7 +94,9 @@ nav a:hover{
     border-radius: 8px;
 }
 
-/* contact section */
+/*----------------------------
+Contact Section
+-----------------------------*/
 #contact-section {
     width: 100%;
     height: auto;
@@ -193,12 +184,6 @@ input {
     padding: 16px 8px;
 }
 
-/* textarea {
-    padding: 12px 8px;
-    box-sizing: border-box;
-    resize: none;
-} */
-
 button{
     width: 180px;
     color: #ffffff;
@@ -211,7 +196,9 @@ button{
 
 
 @media only screen and (max-width: 600px) {
-
+    /*----------------------------
+    Header Section
+    -----------------------------*/
     #header-container {
         width: 100%;
         padding: 4px 0px;
@@ -239,7 +226,9 @@ button{
         margin-right: 10px;
     }
 
-    /* hero section */
+    /*----------------------------
+    Hero Section
+    -----------------------------*/
     #hero-section{
         height: 400px;
     }
@@ -251,7 +240,9 @@ button{
         padding: 0px 10px;
     }
 
-    /* contact section */
+    /*----------------------------
+    Contact Section
+    -----------------------------*/
     #contact-container {
         width: 95%;
         display: flex;
@@ -279,7 +270,9 @@ button{
         margin-top: 40px;
     }
 
-    /* footer section */
+    /*----------------------------
+    Footer Section
+    -----------------------------*/
     footer{
         width: 100%;
     }
