@@ -45,3 +45,12 @@
     font-size: 16px;
     transition: background-color 0.3s;
 }
+
+#logout-button {
+    color: #ffffff;
+    background-color: #111827;
+    border: 1px solid #111827;
+    border-radius: 6px;
+    padding: 6px 12px;
+    cursor: pointer;
+}

@@ -1,35 +1,19 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Article Data
-    let posts = JSON.parse(localStorage.getItem('posts')) 
-    || [
+    let posts = JSON.parse(localStorage.getItem('posts')) || [
         {
             image : '../assets/images/article-1.jpg',
             date : 'March 15, 2025',
             title : 'Getting Started with React Hooks',
             description : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio cupiditate consequatur corporis.'
         },
-        // {
-        //     image : '../assets/images/article-2.jpg',
-        //     date : 'Jan 5, 2025',
-        //     title : 'Web Development',
-        //     description : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio cupiditate consequatur corporis.'
-        // },
-        // {
-        //     image : '../assets/images/article-3.jpg',
-        //     date : 'April 10, 2024',
-        //     title : 'Master CSS',
-        //     description : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio cupiditate consequatur corporis.'
-        // },
     ]
-    
-
 
 
     // Variables
     const postForm = document.getElementById('postForm');
     const blogContainer = document.getElementById('post-container');
-    
-    console.log("Posts List:", posts);
+    const postBlockContainer = document.getElementById('post-form-section');
 
     // Logic for displaying the list of post
     posts.forEach(post => {
@@ -46,8 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
     
         blogContainer.appendChild(card);
     });
-
-
 
     // Form for adding new posts
     postForm.addEventListener('submit', (e) => {
@@ -74,6 +56,54 @@ document.addEventListener('DOMContentLoaded', () => {
         postForm.reset(); // reset the form
     });
 
+    // Logic for login in the user
+    const loginSection = document.getElementById('login-section');
+    const loginBtn = document.getElementById('login-button');
+    const logoutBtn = document.getElementById('logout-button');
+    // const welcomeMessage = document.getElementById('welcome-message');
 
+    // User details
+    const USER = {
+        username: 'admin',
+        password: '1234'
+    }
+
+    // Check login on page load
+    function checkLogin() {
+        const loggedInUser = localStorage.getItem('loggedInUser');
+        
+        if (loggedInUser){
+            loginSection.style.display = 'none';
+            postBlockContainer.classList.remove('hidden');
+            blogContainer.classList.remove('hidden');
+            logoutBtn.classList.remove('hidden')
+            // welcomeMessage.textContent = `Welcome, ${loggedInUser}!`;
+        }else{
+            loginSection.style.display = 'block';
+            postForm.style.display = 'none';
+        }
+    }
+
+
+    // Handles the login logic
+    loginBtn.addEventListener('click', () => {
+        const username = document.getElementById('login-username').value.trim();
+        const password = document.getElementById('login-password').value;
+
+        if (username === USER.username && password === USER.password){
+            localStorage.setItem('loggedInUser', username);
+            checkLogin();
+        }else{
+            alert('Invalid credentials.');
+        }
+    })
+
+    // Handles loging out and clearing the local storage
+    logoutBtn.addEventListener('click', () => {
+        localStorage.removeItem('loggedInUser');
+        checkLogin();
+    });
+
+    checkLogin()
 })
 

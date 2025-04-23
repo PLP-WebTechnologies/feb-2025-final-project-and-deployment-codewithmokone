@@ -23,6 +23,7 @@
                 <a href="articles.html">Articles</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
+                <button id="logout-button" class="hidden">Log Out</button>
             </nav>
             <div class="ham-burger">
                 <img id="menu-icon" src="../assets/icons/menu-svgrepo-com.svg" alt="menu-hamburger-icon">
@@ -33,16 +34,25 @@
                 <a class="mobile-link" href="./pages/about.html">Articles</a>
                 <a class="mobile-link" href="./pages/about.html">About</a>
                 <a class="mobile-link" href="./pages/contact.html">Contact</a>
+                <button id="logout-button" class="hidden">Log Out</button>
             </nav>
         </div>
     </header>
     <main>
-        <section id="post-container">
+        <section id="post-container" class="hidden">
 
         </section>
-        
+            
+
         <section class="post-container">
-            <div id="createPostModal" class="modal">
+            <div id="login-section">
+                <h2>Login</h2>
+                <input type="text" id="login-username" placeholder="Username" />
+                <input type="password" id="login-password" placeholder="Password" />
+                <button id="login-button">Login</button>
+            </div>
+
+            <div id="post-form-section" class="hidden">
                 <div class="modal-content">
                     <h2>Create A New Post</h2>
                     <form id="postForm">
