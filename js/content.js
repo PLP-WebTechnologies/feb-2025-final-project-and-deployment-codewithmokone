@@ -1,35 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Article Data
-    let posts = JSON.parse(localStorage.getItem('posts')) || [
-        {
-            image : '../assets/images/article-1.jpg',
-            date : 'March 15, 2025',
-            title : 'Getting Started with React Hooks',
-            description : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio cupiditate consequatur corporis.'
-        },
-    ]
-
-
     // Variables
     const postForm = document.getElementById('postForm');
-    const blogContainer = document.getElementById('post-container');
-    const postBlockContainer = document.getElementById('post-form-section');
-
-    // Logic for displaying the list of post
-    posts.forEach(post => {
-        const card = document.createElement('article');
-        card.className = 'article';
-    
-        card.innerHTML = `
-            <div class="card-body">
-                <p class="card-date">${post.date}</p>
-                <h3 class="card-title">${post.title}</h3>
-                <p class="card-description">${post.description}</p>
-            </div>
-        `;
-    
-        blogContainer.appendChild(card);
-    });
+    const postContainer = document.getElementById('form-container');
 
     // Form for adding new posts
     postForm.addEventListener('submit', (e) => {
@@ -57,10 +29,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Logic for login in the user
-    const loginSection = document.getElementById('login-section');
+    const loginContainer = document.getElementById('login-container');
     const loginBtn = document.getElementById('login-button');
     const logoutBtn = document.getElementById('logout-button');
-    // const welcomeMessage = document.getElementById('welcome-message');
 
     // User details
     const USER = {
@@ -73,17 +44,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const loggedInUser = localStorage.getItem('loggedInUser');
         
         if (loggedInUser){
-            loginSection.style.display = 'none';
-            postBlockContainer.classList.remove('hidden');
-            blogContainer.classList.remove('hidden');
+            loginContainer.style.display = 'none';
+            postContainer.classList.remove('hidden');
             logoutBtn.classList.remove('hidden')
-            // welcomeMessage.textContent = `Welcome, ${loggedInUser}!`;
         }else{
-            loginSection.style.display = 'block';
+            loginContainer.style.display = 'flex';
+            logoutBtn.classList.add('hidden')
             postForm.style.display = 'none';
         }
     }
-
 
     // Handles the login logic
     loginBtn.addEventListener('click', () => {

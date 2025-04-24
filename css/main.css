@@ -44,6 +44,15 @@ nav a:hover{
     color: #111827;
 }
 
+#login-button {
+    color: #ffffff;
+    background-color: #111827;
+    border: 1px solid #111827;
+    border-radius: 6px;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
 .ham-burger{
     display: none;
 }
@@ -214,7 +223,6 @@ nav a:hover{
 .article-page {
     min-height: 100vh;
 }
-
 
 /* footer section */
 footer {
