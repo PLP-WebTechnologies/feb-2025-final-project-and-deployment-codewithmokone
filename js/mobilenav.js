@@ -7,7 +7,7 @@ const mobileLinks = document.querySelectorAll('.mobile-link');
 mobileLinks.forEach((link) => {
     link.addEventListener("click", function () {
       // Remove the "active" class from all links
-      mobileLinks.forEach((item) => item.classList.remove("active"));
+      // mobileLinks.forEach((item) => item.classList.remove("active"));
   
       // Add the 'active' class to the clicked link
       link.classList.add("active");

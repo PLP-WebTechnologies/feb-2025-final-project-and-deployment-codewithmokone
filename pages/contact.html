@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <!-- external links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
     <!-- internal links -->
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/contact.css">
     <title>Contact - Blog Website</title>
 </head>
 <body>
     <header>
         <div id="header-container">
+
             <h1>Dev-Blog</h1>
+
             <nav>
                 <a href="/index.html">Home</a>
                 <a href="articles.html">Articles</a>
@@ -23,20 +26,22 @@
                 <a href="contact.html">Contact</a>
                 <a href="createPost.html" id="login-button">Log In</a>
             </nav>
+
             <div class="ham-burger">
                 <img id="menu-icon" src="../assets/icons/menu-svgrepo-com.svg" alt="menu-hamburger-icon">
                 <img id="menu-close" class="hidden" src="../assets/icons/close-svgrepo-com.svg" alt="menu-close-icon">
             </div>
+
             <nav class="mobile-nav hidden">
                 <a class="mobile-link" href="/index.html">Home</a>
-                <a class="mobile-link" href="articles.html">Articles</a>
-                <a class="mobile-link" href="about.html">About</a>
-                <a class="mobile-link" href="contact.html">Contact</a>
+                <a class="mobile-link" href="../pages/articles.html">Articles</a>
+                <a class="mobile-link" href="../pages/about.html">About</a>
+                <a class="mobile-link" href="../pages/contact.html">Contact</a>
             </nav>
+
         </div>
-    </header>
     <main>
-        <section id="hero-section">
+        <section id="contact-hero-section">
             <div id="contact-hero-container">
                 <h2>Contact Information</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
@@ -83,11 +88,9 @@
                     <h3>Send Message</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis reiciendis.</p>
                    <form id="form" action="">
-                        <input type="text" id="fname" name="fname" placeholder="Full name" required>
-                        <input type="email" id="email" name="email" placeholder="Email" required>
-                        <textarea id="message" name="message" rows="10" cols="30" required>
-                        Message...
-                        </textarea>
+                        <input type="text" id="fname" name="fname" placeholder="Full name" autocomplete="auto" required>
+                        <input type="email" id="email" name="email" placeholder="Email" autocomplete="auto" required>
+                        <textarea id="message" name="message" rows="10" cols="30" placeholder=" Message" required></textarea>
                         <button>Send Message</button>
                    </form>
                 </div>
@@ -99,6 +102,6 @@
 
         </div>
     </footer>
-    <script src="../js/main.js"></script>
+    <script src="../js/mobilenav.js"></script>
 </body>
 </html>
