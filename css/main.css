@@ -217,7 +217,7 @@ nav a:hover{
 
 #about-hero-section {
     width: 100%;
-    height: 500px;
+    height: auto;
     background-image: url('/assets/images/about-hero-image.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -709,7 +709,7 @@ footer {
         width: 100%;
     }
 
-    /* feature section */
+    /*---------------------------- feature section -------------------------*/
     #feature-container{
         width: 95%;
         flex-direction: column;
@@ -730,7 +730,7 @@ footer {
         padding: 0px 10px;
     }
 
-    /* blog section */
+    /*---------------------------- blog section ----------------------------*/
     #bloglist-container {
         width: 95%;
         display: flex;
@@ -755,7 +755,41 @@ footer {
         gap: 40px; 
     }
 
-    /* footer section */
+    /*---------------------------- About Section ----------------------------*/
+    #about-hero-container {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-inline: auto;
+    }
+    
+    #about-feature-container{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        margin-inline: auto;
+    }
+
+    #why-feature-details p{
+        width: 80%;
+    }
+
+    #dev-feature-details {
+        width: 100%;
+    }
+
+    /*------------------------ What We Do Section ---------------------------*/
+    .what-we-do-image {
+        display: none;
+    }
+
+    #what-we-do-details {
+        width: 95%;
+    }
+
+    /*--------------------------- footer section ----------------------------*/
     footer{
         width: 100%;
     }
