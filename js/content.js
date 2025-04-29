@@ -2,17 +2,18 @@ document.addEventListener('DOMContentLoaded', () => {
     // Variables
     const postForm = document.getElementById('postForm');
     const postContainer = document.getElementById('form-container');
+    const formHeader = document.getElementById('form-heading');
 
     // Form for adding new posts
     postForm.addEventListener('submit', (e) => {
         e.preventDefault();
     
-        const title = document.getElementById('title').value.trim()
-        const date = document.getElementById('date').value.trim()
-        const description = document.getElementById('description').value.trim()
+        const title = document.getElementById('title').value.trim();
+        const date = document.getElementById('date').value.trim();
+        const description = document.getElementById('description').value.trim();
     
         if (!title || !description){
-            alert("Please enter all fields")
+            alert("Please enter all fields");
         }
     
         const newPost = {
@@ -30,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Logic for login in the user
     const loginContainer = document.getElementById('login-container');
-    const loginBtn = document.getElementById('login-button');
+    const loginBtn = document.getElementById('login-form-button');
     const logoutBtn = document.getElementById('logout-button');
 
     // User details
@@ -45,11 +46,12 @@ document.addEventListener('DOMContentLoaded', () => {
         
         if (loggedInUser){
             loginContainer.style.display = 'none';
-            postContainer.classList.remove('hidden');
-            logoutBtn.classList.remove('hidden')
+            postContainer.classList.remove('hidden-form');
+            formHeader.classList.remove('hidden-form');
+            logoutBtn.classList.remove('hidden');
         }else{
             loginContainer.style.display = 'flex';
-            logoutBtn.classList.add('hidden')
+            logoutBtn.classList.add('hidden');
             postForm.style.display = 'none';
         }
     }
@@ -73,6 +75,6 @@ document.addEventListener('DOMContentLoaded', () => {
         checkLogin();
     });
 
-    checkLogin()
+    checkLogin();
 })
 

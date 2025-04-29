@@ -7,7 +7,7 @@ body {
     font-family: Roboto, sans-serif;
 }
 
-/* header section */
+/*---------------------------- header section ------------------------------*/
 header {
     width: 100%;
     background-color: #FFFFFF;
@@ -49,8 +49,8 @@ nav a:hover{
     background-color: #111827;
     border: 1px solid #111827;
     border-radius: 6px;
-    padding: 6px 16px;
     cursor: pointer;
+    padding: 10px 20px;
 }
 
 .ham-burger{
@@ -85,7 +85,7 @@ nav a:hover{
     padding: 20px 10px;
 }
 
-/* feature section */
+/*--------------------------- feature section ----------------------------*/
 #feature-section{
     width: 100%;
     background-color: #F9FAFB;
@@ -137,7 +137,7 @@ nav a:hover{
     text-decoration: none;
 }
 
-/* blog list section */
+/*---------------------------- blog list section -------------------------*/
 #blogList-section {
     width: 100%;
     background-color: #F9FAFB; 
@@ -213,7 +213,7 @@ nav a:hover{
     min-height: 100vh;
 }
 
-/*--- About Page ---*/
+/*---------------------------- About Page -----------------------------*/
 
 #about-hero-section {
     width: 100%;
@@ -256,7 +256,7 @@ nav a:hover{
     text-align: center;
 }
 
-/*--- About Section ---*/
+/*---------------------------- About Section ----------------------------*/
 
 #about-feature-section{
     width: 100%;
@@ -268,9 +268,6 @@ nav a:hover{
     width: 1280px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
     margin-inline: auto;
 }
 
@@ -295,7 +292,7 @@ nav a:hover{
     line-height: 22px;
 }
 
-/*--- What We Do Section ---*/
+/*-------------------------- What We Do Section --------------------------*/
 
 #what-we-do-feature-section {
     width: 100%;
@@ -331,7 +328,7 @@ ul{
     gap: 20px;
 }
 
-/*--- Why Section ---*/
+/*--------------------------- Why Section --------------------------------*/
 
 #why-feature-details{
     width: 100%;
@@ -347,10 +344,10 @@ ul{
 
 #why-feature-details p{
     text-align: center;
-    width: 80%;
+    width: 35%;
 }
 
-/*--- Dev Section ---*/
+/*---------------------------- Dev Section -------------------------------*/
 #dev-feature-section{
     width: 100%;
     display: flex;
@@ -415,7 +412,7 @@ ul{
     border-radius: 8px;
 }
 
-/*--- Contact Section ---*/
+/*---------------------------- Contact Section ---------------------------*/
 #contact-section {
     width: 100%;
     height: auto;
@@ -512,7 +509,7 @@ button{
     background-color: #111827;
 }
 
-/*------------------ Create Post Page ------------------*/
+/*------------------------------- Create Post Page ----------------------------*/
 
 #main {
     display: flex;
@@ -533,31 +530,51 @@ button{
     align-items: center;
     justify-content: center;
     gap: 20px;
+    margin-inline: auto;
 }
 
 #login-form {
-    width: 500px;
+    width: 600px;
     height: 200px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
+    padding: 48px 20px;
 }
 
 #login-form input {
+    width: 100%;
     padding: 12px;
+    margin: 6px;
 }
 
-#login-button {
-    padding: 12px 0;
+#login-form-button {
+    padding: 20px 20px;
 }
 
-#form-h2 {
+#form-container {
+    width: 1280px;
+    display: flex;
+    align-items: center;
+}
+
+#postForm {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form-heading {
     text-align: center;
     margin-bottom: 40px;
 }
 
-.postForm label {
-    padding: 20px 0;
+#postForm label {
+    width: 100%;
+    display: flex;
+    align-items: start;
 }
 
 .postInput {
@@ -573,10 +590,10 @@ button{
 }
 
 .postSubmitBtn {
-    background-color: #3498db;
-    color: white;
     padding: 10px 20px;
-    border: none;
+    color: #ffffff;
+    background-color: #111827;
+    border: 1px solid #111827;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
@@ -588,15 +605,15 @@ button{
     background-color: #111827;
     border: 1px solid #111827;
     border-radius: 6px;
-    padding: 6px 12px;
+    padding: 10px 20px;
     cursor: pointer;
 }
 
-.hidden {
+.hidden-form {
     display: none;
 }
 
-/* footer section */
+/*---------------------------------- footer section -----------------------*/
 footer {
     width: 100%;
     height: 100px;
@@ -605,8 +622,15 @@ footer {
 
 #footer-container{
     width: 1280px;
+    height: 100px;
     margin-inline: auto;
-    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer-container p {
+    color: #ffffff;
 }
 
 
@@ -639,9 +663,6 @@ footer {
         margin-right: 10px;
     }
 
-    /*----------------------------
-    Contact Page
-    -----------------------------*/
     #contact-hero-section{
         height: 400px;
     }
@@ -653,9 +674,6 @@ footer {
         padding: 0px 10px;
     }
 
-    /*----------------------------
-    Contact Section
-    -----------------------------*/
     #contact-container {
         width: 95%;
         display: flex;
@@ -683,9 +701,6 @@ footer {
         margin-top: 30px;
     }
 
-    /*----------------------------
-    Footer Section
-    -----------------------------*/
     footer{
         width: 100%;
     }
@@ -693,9 +708,6 @@ footer {
     #footer-container{
         width: 100%;
     }
-
-
-    /*------------------------------------------------------------------------*/
 
     /* feature section */
     #feature-container{

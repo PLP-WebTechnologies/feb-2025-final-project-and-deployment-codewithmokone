@@ -3,17 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- external links -->
+    <!----------------------- External Links ---------------------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
-    <!-- internal links -->
+    <!----------------------- Internal Links ---------------------->
     <link rel="stylesheet" href="../css/main.css">
     <title>Blog Website</title>
 </head>
 <body>
+    <!----------------------- Header Section ---------------------->
     <header>
         <div id="header-container">
             <h1>Dev-Blog</h1>
@@ -22,7 +21,7 @@
                 <a href="articles.html">Articles</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
-                <button id="logout-button" class="hidden">Log Out</button>
+                <a id="logout-button" class="hidden">Log Out</a>
             </nav>
             <div class="ham-burger">
                 <img id="menu-icon" src="../assets/icons/menu-svgrepo-com.svg" alt="menu-hamburger-icon">
@@ -37,40 +36,45 @@
             </nav>
         </div>
     </header>
+    <!----------------------- Main Section ---------------------->
     <main>
+        <!----------------------- Post Form Section ---------------------->
         <section id="post-form-section">
-            <div id="login-container">
-                <h2>Login</h2>
-                <form id="login-form" action="">
-                    <input type="text" id="login-username" placeholder="Username" />
-                    <input type="password" id="login-password" placeholder="Password" />
-                    <button id="login-button">Login</button>
-                </form>
-            </div>
-                <div id="form-container" class="hidden">
-                    <h2 id="form-h2" class="hidden">Create A New Post</h2>
-                    <form id="postForm">
-                        <label for="postTitle">Title:</label>
-                        <input type="text" class="postInput" id="title" name="title" required>
-                        <label for="postTitle">Date:</label>
-                        <input type="date" class="postInput" id="date" name="date" required>
-                        <label class="postheading" for="description">Description</label>
-                        <textarea class="postInput postDescription" id="description" name="description" required>
-                        </textarea>
-                        <button type="submit" id="submit" class="postSubmitBtn">Post</button>
+            <div id="post-form-container">
+                <!----------------------- Login Form Section ---------------------->
+                <div id="login-container">
+                    <h2>Login</h2>
+                    <form id="login-form" action="">
+                        <input type="text" id="login-username" placeholder="Username" />
+                        <input type="password" id="login-password" placeholder="Password" />
+                        <button id="login-form-button">Login</button>
                     </form>
                 </div>
-
+                <!----------------------- Post Form Section ---------------------->
+                <div id="form-container" class="hidden-form">
+                    <h2 id="form-heading" class="hidden-form">Create A New Post</h2>
+                    <form id="postForm">
+                            <label for="postTitle">Title:</label>
+                            <input type="text" class="postInput" id="title" name="title" required>
+                            <label for="postTitle">Date:</label>
+                            <input type="date" class="postInput" id="date" name="date" required>
+                            <label class="postheading" for="description">Description</label>
+                            <textarea class="postInput postDescription" id="description" name="description" required>
+                            </textarea>
+                            <button type="submit" id="submit" class="postSubmitBtn">Post</button>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
-
+    <!----------------------- Footer Section ---------------------->
     <footer>
         <div id="footer-container">
-
+            <p>&copy;2025 Dev-Tech Blog. All Right Reserved.</p>
         </div>
     </footer>
-    <script src="../js/main.js" defer></script>
-    <script src="../js/content.js" defer></script>
-    <!-- <script src="../js/post.js"></script> -->
+    <!----------------------- Internal Links ---------------------->
+    <script src="../js/main.js"></script>
+    <script src="../js/content.js"></script>
 </body>
 </html>
