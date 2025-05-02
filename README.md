@@ -24,3 +24,6 @@ Ensure semantic correctness.
 ## Login Details
 - username: admin
 - password: 1234
+
+## Live Demo
+-  https://plp-webtechnologies.github.io/feb-2025-final-project-and-deployment-codewithmokone/
