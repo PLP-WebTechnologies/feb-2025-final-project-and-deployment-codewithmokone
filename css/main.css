@@ -218,7 +218,7 @@ nav a:hover{
 #about-hero-section {
     width: 100%;
     height: auto;
-    background-image: url('assets/images/about-hero-image.jpg');
+    background-image: url('../assets/images/about-hero-image.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center;
@@ -245,11 +245,13 @@ nav a:hover{
 }
 
 #hero-details h2{
+    color: #ffffff;
     font-size: 1.8rem;
     font-weight: bold;
 }
 
 #hero-details p {
+    color: #ffffff;
     width: 100%;
     text-align: center;
 }
@@ -375,7 +377,7 @@ ul{
 #contact-hero-section{
     width: 100%;
     height: 600px;
-    background-image: url('assets/images/contact-header-bg.jpg');
+    background-image: url('../assets/images/contact-header-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center;
